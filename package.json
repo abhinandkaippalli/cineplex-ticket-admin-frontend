@@ -1,0 +1,19 @@
+{
+  "name": "cineplex-ticket-admin",
+  "version": "1.0.0",
+  "description": "",
+  "sourse" : "src/*.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
