@@ -10,7 +10,7 @@ class Model {
         return movieDetails
     }
 
-    async setMovieDetails() {
+    async setMovieDetails(data) {
         const res = await fetch("http://localhost:3000/movie", {
             method: 'POST',
             headers: {

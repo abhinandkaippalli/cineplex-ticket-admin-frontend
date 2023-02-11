@@ -9,10 +9,8 @@ class Controller {
 
     }
 
-    setScreen() {
-        return this.model.setScreen()
-    }
+    setScreen()
 }
 
-export default Controller()
+export default Controller
 

@@ -1,13 +1,294 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="./app.js" type="module"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i>Movies
+        </a>
+        <div class='bx bx-menu' style='color:#ffffff'></div>
+
+        <!-- Menu -->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#comig">Coming</a></li>
+            <li><a href="#news">Mews</a></li>
+        </ul>
+        <a href="#" class="btn">Sign In</a>
+    </header>
+
+    <!-- Home -->
+    <section class="home swiper" id="home">
+        <!-- Swiper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="../assets/avatarwow.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Venom: Let There <br> Be Carnage</h1>
+                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play-circle'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="../assets/975294.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Venom: Let There <br> Be Carnage</h1>
+                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play-circle'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="../assets/avatarwow.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Venom: Let There <br> Be Carnage</h1>
+                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play-circle'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="movies" id="movies">
+        <h2 class="heading">Opening this week</h2>
+
+        <!-- Movies Conatiner -->
+
+        <div class="movies-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/kantar-all.jpeg" alt="">
+                </div>
+                <h3>Kantara</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/chup.jpg" alt="">
+                </div>
+                <h3>Chup</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/varisu.jpg" alt="">
+                </div>
+                <h3>Varisu</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/batman_vs_superman.jpeg" alt="">
+                </div>
+                <h3>Batman Vs Superman</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/bheeshma_parvam.jpg" alt="">
+                </div>
+                <h3>Bheeshma Parvam</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/maniarayile_ashokan.jpeg" alt="">
+                </div>
+                <h3>Maniarayile Ashokan</h3>
+                <span>120 min | Drama</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/Jana Gana Mana.jpeg" alt="">
+                </div>
+                <h3>Jana Gana Mana</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/vikram.jpeg" alt="">
+                </div>
+                <h3>vikram</h3>
+                <span>120 min | Action Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/Kuruthi.jpeg" alt="">
+                </div>
+                <h3>Kuruthi</h3>
+                <span>120 min | Action Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../assets/malayankunju.jpeg" alt="">
+                </div>
+                <h3>Malayankunju</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Coming-->
+
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!--- Coming Container -->
+        <div class="coming-container swiper" id="coming-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/kantar-all.jpeg" alt="">
+                    </div>
+                    <h3>Kantara</h3>
+                    <span>120 min | Thriller</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/chup.jpg" alt="">
+                    </div>
+                    <h3>Chup</h3>
+                    <span>120 min | Thriller</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/varisu.jpg" alt="">
+                    </div>
+                    <h3>Varisu</h3>
+                    <span>120 min | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/batman_vs_superman.jpeg" alt="">
+                    </div>
+                    <h3>Batman Vs Superman</h3>
+                    <span>120 min | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/bheeshma_parvam.jpg" alt="">
+                    </div>
+                    <h3>Bheeshma Parvam</h3>
+                    <span>120 min | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/maniarayile_ashokan.jpeg" alt="">
+                    </div>
+                    <h3>Maniarayile Ashokan</h3>
+                    <span>120 min | Drama</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/Jana Gana Mana.jpeg" alt="">
+                    </div>
+                    <h3>Jana Gana Mana</h3>
+                    <span>120 min | Thriller</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/vikram.jpeg" alt="">
+                    </div>
+                    <h3>vikram</h3>
+                    <span>120 min | Action Thriller</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/Kuruthi.jpeg" alt="">
+                    </div>
+                    <h3>Kuruthi</h3>
+                    <span>120 min | Action Thriller</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../assets/malayankunju.jpeg" alt="">
+                    </div>
+                    <h3>Malayankunju</h3>
+                    <span>120 min | Thriller</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- News Letter -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe to get <br>Newsletter</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter Email..." required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i>Movies
+        </a>
+        <div class="social">
+            <a href="#">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-instagram'></i>
+            </a>
+        </div>
+    </section>
+
+    <!---Copyright-->
+        <div class="copyright">
+            <p>&#169; Abhinand K All Right Reserved.</p>
+        </div>
 </body>
+
 </html>

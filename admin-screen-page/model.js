@@ -10,7 +10,7 @@ class Model{
         return result
     }
 
-    async setScreen() {
+    async setScreen(data) {
         const res = await fetch("http://localhost:3000/screen", {
             method: 'POST',
             headers: {

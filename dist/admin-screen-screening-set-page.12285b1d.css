@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #e7e7f1;
+}
+
+nav {
+  height: 80px;
+  background-color: #1a66e0;
+  box-shadow: 0 4px 4px #17095433;
+}
+
+nav .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav .navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 50px;
+  display: flex;
+}
+
+nav .logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav .menu ul {
+  display: flex;
+}
+
+nav .menu ul li {
+  margin: 0 30px;
+  list-style: none;
+}
+
+nav .menu ul li a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all .4s;
+}
+
+nav .menu ul li a:hover {
+  color: #1a66e0;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-weight: 500;
+}
+
+label i {
+  color: #fff;
+  font-size: 25px;
+}
+
+#checking {
+  display: none;
+}
+
+input[type="text"], select {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+
+input[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-left: 32%;
+  padding: 15px 200px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.add-movie {
+  margin-top: -40px;
+  padding: 120px;
+}
+
+.date-time label, input {
+  display: block;
+}
+
+.date-time input {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+
+/*# sourceMappingURL=admin-screen-screening-set-page.12285b1d.css.map */

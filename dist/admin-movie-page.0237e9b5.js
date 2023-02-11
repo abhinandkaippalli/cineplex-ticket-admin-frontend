@@ -536,6 +536,18 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _controllerJs = require("./controller.js");
 var _controllerJsDefault = parcelHelpers.interopDefault(_controllerJs);
 const controller = new (0, _controllerJsDefault.default)();
+const form = document.getElementById("form");
+const name = document.getElementById("name");
+const dName = document.getElementById("dName");
+const type = document.getElementById("type");
+const time = document.getElementById("time");
+const image = document.getElementById("image");
+const about = document.getElementById("about");
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    controller.setMovieDetails(name.value, dName.value, type.value, time.value, image.value, about.value);
+    form.reset();
+});
 
 },{"./controller.js":"inliT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"inliT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -546,9 +558,19 @@ class Controller {
     constructor(){
         this.model = new (0, _modelJsDefault.default)();
     }
-    getMovieDetails() {}
-    setMovieDetails() {
-        return this.model.setMovieDetails();
+    getMovieDetails() {
+        return this.model.getMovieDetails();
+    }
+    setMovieDetails(name, dName, type, time, image, about) {
+        const data = {
+            name: name,
+            director: dName,
+            type: type,
+            duration: time,
+            image: image,
+            about: about
+        };
+        this.model.setMovieDetails(data);
     }
 }
 exports.default = Controller;
@@ -565,7 +587,7 @@ class Model {
         const movieDetails = await movies.json();
         return movieDetails;
     }
-    async setMovieDetails() {
+    async setMovieDetails(data) {
         const res = await fetch("http://localhost:3000/movie", {
             method: "POST",
             headers: {

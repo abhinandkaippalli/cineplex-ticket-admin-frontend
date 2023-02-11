@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/admin-screening-screen.css">
+    <script src="../admin-screening-page/view.js" type="module"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="#">Cinemas</a>
+            </div>
+            <div class="menu">
+                <input type="checkbox" id="checking" />
+                <label for="checking">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="#">Add Movie</a></li>
+                    <li><a href="#">Set Screen</a></li>
+                    <li><a href="#">View Ticket</a></li>
+                    <li><a href="#">View Users</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- set screen and screening -->
+
+    <section>
+
+        <div class="add-movie">
+            <form action="#" method="" id="form">
+
+                <label class="caption" for="available">Add Screen for Available / Not Available</label>
+                <select id="available" name="screen">
+                    <option value="true">Available</option>
+                    <option value="false">Not Available</option>
+                </select>
+
+                <label class="caption" for="screen">Select Screen</label>
+                <select id="screen" name="screen">
+                    <option value="1">Screen 1</option>
+                    <option value="2">Screen 2</option>
+                    <option value="3">Screen 3</option>
+                    <option value="4">Screen 4</option>
+                </select>
+
+                <label class="caption" for="fname">Movie Name</label>
+                <select id="movie" name="movie">
+                    <option value="Varisu">Varisu</option>
+                    <option value="Vikram">Vikram</option>
+                    <option value="Kanthara">Kanthara</option>
+                </select>
+
+                <div class="date-time">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time">
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

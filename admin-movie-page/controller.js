@@ -6,11 +6,19 @@ class Controller{
     }
 
     getMovieDetails() {
-
+        return this.model.getMovieDetails();
     }
 
-    setMovieDetails() {
-        return this.model.setMovieDetails()
+    setMovieDetails(name,dName,type,time,image,about) {
+        const data = {
+            name: name,
+            director: dName,
+            type: type,
+            duration: time,
+            image: image,
+            about: about
+        }
+        this.model.setMovieDetails(data)
     }
 }
 

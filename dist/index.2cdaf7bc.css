@@ -1,6 +1,23 @@
-h1 {
-  color: #ff69b4;
-  font-family: cursive;
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300;500;700&display=swap";
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --main-color: #ff2c1f;
+  --text-color: #020307;
+}
+
+body {
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */

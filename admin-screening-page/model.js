@@ -7,20 +7,35 @@ class Model {
         const res = await fetch("http://localhost:3000/screening")
         const screening = await res.json()
 
-        return(screening)
-    } 
+        return (screening)
+    }
 
-    async setScreening() {
-        const res = await fetch("http://localhost:3000/screening", {
+    async setScreen(data) {
+        console.log(data);
+        const res = await fetch("http://localhost:3000/screen", {
             method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },  
+            body: JSON.stringify(data)
+        })
+        const result = await res.json()
+        console.log(result);
+        return result;
+    }
+
+    async setScreening(data) {
+        const res = await fetch("http://localhost:3000/screening", {
+            method: "POST",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         })
-            const result = await res.json()
-            console.log(result);
+        const result = await res.json()
+        console.log(result);
         return result;
     }
 }

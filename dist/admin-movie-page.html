@@ -3,11 +3,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Add Page</title>
     <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="/admin-movie-page.91fb6072.css">
     <script defer="" src="/admin-movie-page.0237e9b5.js"></script>
 </head>
 <body>
-    Movie Details
+  
+    <h3>Add Movie Details</h3>
+
+    <div class="container">
+      <form action="" id="form">
+        <label for="name">Movie Name</label>
+        <input type="text" id="name" name="name" placeholder="Movie.." required="">
+    
+        <label for="Dname">Director Name</label>
+        <input type="text" id="dName" name="dName" placeholder="Director.." required="">
+
+        <label for="type">Type</label>
+        <input type="text" id="type" name="type" placeholder="Type.." required="">
+
+        <label for="time">Time</label>
+        <input type="text" id="time" name="time" placeholder="Time.." required="">
+
+        <label for="image">Image</label>
+        <input type="text" id="image" name="image" placeholder="Image.." required="">
+    
+        <label for="about">About</label>
+        <textarea id="about" name="about" placeholder="About movie.." style="height: 200px" required=""></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
 </body>
 </html>
